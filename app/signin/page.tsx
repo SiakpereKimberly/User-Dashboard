@@ -22,8 +22,8 @@ export default function SignInPage() {
   };
   const [showPassword, setShowPassword] = useState(false);
   return (
-    <main className='flex min-h-screen'>
-      <section className='w-145 bg-[#211100] px-10 py-8 flex text-[#FFF0D9] font-Roboto'>
+    <main className='flex min-h-screen flex-col md:flex-row'>
+      <section className='w-full bg-[#211100] px-6 py-8 flex text-[#FFF0D9] font-Roboto md:w-145 md:px-10'>
         <div className='flex flex-col justify-between h-full'>
           <div>
             <div className='flex items-center mb-8'>
@@ -32,7 +32,7 @@ export default function SignInPage() {
                 alt='Anchor Logo'
                 width={300}
                 height={300}
-                className='object-contain bg-[#211100] justify-center items-center'
+                className='object-contain hidden md:block'
               />
             </div>
             <h2 className='max-w-122  text-5xl font-bold font-Roboto text-[#FFDCB6]'>
@@ -50,7 +50,7 @@ export default function SignInPage() {
           </p>
         </div>
       </section>
-      <section className='relative w-225 bg-[#FFFFFF] flex justify-center items-center'>
+      <section className='relative w-full bg-[#FFFFFF] flex justify-center items-center px-6 py-12 md:w-225 md:px-0 md:py-0'>
         <div className='absolute top-7 right-4 text-sm font-Roboto text-[#212121]'>
           <span className='mr-2'>Can’t login?</span>
           <Link
@@ -61,7 +61,7 @@ export default function SignInPage() {
           </Link>
         </div>
         <div className='w-full max-w-107'>
-          <h1 className='text-4xl font-bold text-[#211100] font-Roboto'>
+          <h1 className='text-3xl md:text-4xl font-bold text-[#211100] font-Roboto'>
             Sign in
           </h1>
           <p className='text-[#646464] font-Roboto text-sm'>
