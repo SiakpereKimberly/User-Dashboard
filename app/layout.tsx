@@ -1,14 +1,8 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const roboto = Roboto({
   subsets: ['latin'],
 });
 
@@ -20,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang='en' className='h-full antialiased'>
-      <body className={`${geistSans.variable} min-h-full`}>
+      <body className={`${roboto.className} min-h-full`}>
         <div>
           <div>
             <main>{children}</main>

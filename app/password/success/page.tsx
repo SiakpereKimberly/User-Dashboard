@@ -1,7 +1,9 @@
+'use client';
+import { CircleCheck } from 'lucide-react';
 import Link from 'next/link';
 export default function PasswordVerifyPage() {
   return (
-    <main className='relative min-h-screen bg-zinc-200'>
+    <main className='relative min-h-screen bg-[#FFFFFF]'>
       <div className='absolute top-0 left-0 h-1 w-full bg-[#E2943E]'></div>
       <header className='absolute top-0 right-0   flex justify-end px-10 py-7 '>
         <p className='text-sm text-[#212121]'>
@@ -17,7 +19,12 @@ export default function PasswordVerifyPage() {
       </header>
       <div className='flex justify-center pt-44'>
         <div className='w-full max-w-xl text-center'>
-          <div className='mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-green-500 text-xl text-white'></div>
+          <div className='mb-8 flex justify-center'>
+            <CircleCheck
+              size={70}
+              className='fill-green-500 text-white'
+            ></CircleCheck>
+          </div>
 
           <h1 className='mt-4 text-xl font-bold text-[#211100]'>
             New password set!
